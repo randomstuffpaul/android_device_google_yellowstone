@@ -34,6 +34,10 @@ BOARD_KERNEL_CMDLINE := console=ttyS0,115200n8 debug_uartport=lsport,3 no_consol
 # Graphics
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 1
 
+# Kernel
+TARGET_KERNEL_SOURCE := kernel/google/yellowstone
+TARGET_KERNEL_CONFIG := yellowstone_defconfig
+
 # Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USES_MKE2FS := true
