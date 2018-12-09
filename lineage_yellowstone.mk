@@ -26,3 +26,10 @@ PRODUCT_DEVICE := yellowstone
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Project Tango Tablet Development Kit
 PRODUCT_MANUFACTURER := Google
+
+# Device Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=tango \
+    BUILD_FINGERPRINT=google/tango/yellowstone:4.4.2/KOT49H.161129/161129002:user/release-keys \
+    PRIVATE_BUILD_DESC="ardbeg-user 4.4.2 KOT49H.161129 161129002 release-keys"
+
