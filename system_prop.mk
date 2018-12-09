@@ -19,6 +19,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608 \
     ro.zygote.disable_gl_preload=true
 
+# HDMI CEC: Yellowstone works as a playback device (4)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hdmi.device_type=4
+
 # HWUI Parameters
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.drop_shadow_cache_size=4.0 \
