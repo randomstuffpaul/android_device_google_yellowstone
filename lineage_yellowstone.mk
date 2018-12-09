@@ -27,6 +27,10 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Project Tango Tablet Development Kit
 PRODUCT_MANUFACTURER := Google
 
+# Boot Animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=tango \
