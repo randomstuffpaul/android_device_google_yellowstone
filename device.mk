@@ -15,3 +15,7 @@
 
 # Inherit Proprietary Vendor Blobs
 $(call inherit-product, vendor/google/yellowstone/yellowstone-vendor.mk)
+
+# System Properties
+-include $(LOCAL_PATH)/system_prop.mk
+
