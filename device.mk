@@ -35,6 +35,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    power.tegra
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.yellowstone \
@@ -51,8 +55,20 @@ PRODUCT_PACKAGES += \
     init.yellowstone.rc \
     ueventd.yellowstone.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.tegra
+
+# Stagefright
+PRODUCT_PACKAGES += \
+   libstagefrighthw
+
 # System Properties
 -include $(LOCAL_PATH)/system_prop.mk
+
+# Thermal
+PRODUCT_PACKAGES += \
+    thermal.tegra
 
 # WiFi
 PRODUCT_PACKAGES += \
