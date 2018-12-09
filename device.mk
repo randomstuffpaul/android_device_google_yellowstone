@@ -35,6 +35,22 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.yellowstone \
+    init.hdcp.rc \
+    init.icera.rc \
+    init.icera.common.rc \
+    init.icera.tablet.rc \
+    init.nv_dev_board.usb.rc \
+    init.t124.rc \
+    init.t124_emmc.rc \
+    init.tlk.rc \
+    init.trace.rc \
+    init.usb.rc \
+    init.yellowstone.rc \
+    ueventd.yellowstone.rc
+
 # System Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
