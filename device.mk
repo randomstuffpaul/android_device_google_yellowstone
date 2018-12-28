@@ -19,6 +19,25 @@ $(call inherit-product, vendor/google/yellowstone/yellowstone-vendor.mk)
 # System Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    audio.usb.default \
+    audio.r_submix.default \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    libaudio-resampler \
+    libaudiospdif \
+    libtinyalsa \
+    libtinycompress \
+    tinycap \
+    tinymix \
+    tinyplay \
+    xaplay
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/enctune.conf:system/etc/enctune.conf
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
