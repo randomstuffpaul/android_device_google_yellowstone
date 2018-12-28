@@ -6,6 +6,8 @@
         <interface>
             <name>IBluetoothHci</name>
             <instance>default</instance>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.camera.provider</name>
         <transport arch="32">passthrough</transport>
         <version>2.4</version>
@@ -13,6 +15,13 @@
             <name>ICameraProvider</name>
             <instance>legacy/0</instance>
         </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.gnss</name>
+        <transport arch="32">passthrough</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGnss</name>
     </hal>
     <hal format="hidl">
         <name>android.hardware.power</name>
